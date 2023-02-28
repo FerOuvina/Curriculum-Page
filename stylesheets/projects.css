@@ -21,35 +21,84 @@
     font-size: 1.2rem;
 }
 
-.mainSection__title {
+.mainSection__title, .extraSection__title {
     margin: 1rem 1rem 0.5rem 1rem;
 }
 
-.mainSection__subTitle {
+.mainSection__subTitle, .extraSection__subTitle{
     margin: 0 1rem 0.5rem 1rem;
 }
 
-.mainSection__subTitle a {
+.mainSection__subTitle a, .extraSection__subTitle a {
     text-decoration: none;
     color: var(--darkGreen);
     transition: 0.5s all ease-in-out;
 }
 
-.mainSection__subTitle a:hover {
+.mainSection__subTitle a:hover, .extraSection__subTitle a:hover {
     color: var(--darkGray);
 }
 
-.mainSection__description {
+.mainSection__description, .extraSection__description {
     margin: 1rem;
 }
 
-.mainSection__fig {
+.mainSection__fig, .extraSection__fig {
     display: flex;
     justify-content: center;
 }
 
-.mainSection__fig img{
+.mainSection__fig img, .extraSection__fig img{
     width: 800px;
     border-radius: 20px;
     margin: 0 0 1rem 0;
+}
+
+.extraSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    max-width: 900px;
+    margin: 1rem;
+    background-color: var(--gray);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 1s ease-in-out;
+    position: relative;
+    opacity: 0;
+}
+
+.extraSection__btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--darkGreen);
+    border: 2px solid var(--darkGreen);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: var(--lightGray);
+    padding: .3rem;
+    margin-bottom: 1rem;
+}
+
+.extraSection__btn:hover {
+    background-color: var(--darkGray);
+    border: 2px solid var(--darkGray);
+}
+
+.extraSection__btn:active {
+    background-color: var(--lightBlue);
+    border: 2px solid var(--lightBlue);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.shown {
+    opacity: 1;
+    position: relative;
 }

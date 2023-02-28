@@ -24,13 +24,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin: 1rem 0;
 }
 
 .mainContainer {
     background-color: var(--lightGray);
     border-radius: 20px;
-    height: 98vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

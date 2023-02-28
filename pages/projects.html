@@ -29,8 +29,8 @@
              <!-- Start of Main Section -->
              <section class="mainSection">
         
-                <h2 class="mainSection__title">Projects</h2>
-                <h4 class="mainSection__subTitle"> <a href="https://ferouvina.github.io/Portfolio/">https://ferouvina.github.io/Portfolio</a></h4>
+                <h2 class="mainSection__title">Portfolio</h2>
+                <h4 class="mainSection__subTitle"> <a href="https://ferouvina.github.io/Portfolio/" target="_blank">https://ferouvina.github.io/Portfolio</a></h4>
                 <p class="mainSection__description">This is my Portfolio. I want to highlight it because it hosts my best and
                     most recent projects, also because my Portfolio is a project itself that
                     I think is good to showcase since I’ve put a lot of work into it.</p>
@@ -38,13 +38,35 @@
                 <figure class="mainSection__fig">
                     <img src="../assets/Portfolio Screenshot.png" alt="Portfolio Screenshot" class="mainSection__fig--img">
                 </figure>
-        
+
+                
             </section>
             <!-- End of Main Section -->
+            
+            <button class="extraSection__btn" data-btn>Show More</button>
+
+            <!-- Start of Extra Section -->
+
+            <section class="extraSection hidden" data-projectsContainer>
+                
+                <h2 class="extraSection__title">Encryptor</h2>
+                <h4 class="extraSection__subTitle"><a href="https://ferouvina.github.io/Oracle-One-Encryptor/" target="_blank">https://ferouvina.github.io/Oracle-One-Encryptor</a></h4>
+                <p class="extraSection__description">This is a single page text encrypt & decrypt app. I made it using HTML, CSS and vanilla JavaScript, it consist of two main functions, the first one to encrypt the input text from the user, given certain encryption keys, and the second to decrypt the text with the same encryption keys. It also has a copy to clipboard button and it's adapted to mobile devices so it can be accessed from any device.</p>
+
+                <figure class="extraSection__fig">
+                    <img src="../assets/Encryptor Screenshot.png" alt="Encryptor Page Screenshot" class="extraSection__fig--img">
+                </figure>
+
+            </section>
+
+            <!-- End of Extra Section -->
 
         </div>
 
     </main>
 
+
+    <!-- Linking JS -->
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
