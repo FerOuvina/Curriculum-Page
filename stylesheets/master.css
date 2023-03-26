@@ -60,3 +60,33 @@ main {
 .nav__list--link a:hover {
     color: var(--lightGray);
 }
+
+/* Portrait and Landscape */
+
+@media only screen 
+  and (max-device-width: 568px) {
+    .mainContainer {
+        max-width: fit-content;
+    }
+
+    .nav__list--link {
+        margin: 0 1rem;
+        font-size: 1.1rem;
+    }
+  }
+  
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .mainContainer {
+        max-width: fit-content;
+    }
+    .nav__list {
+        padding: .5rem;
+    }
+    .nav__list--link {
+        margin: 0 .3rem;
+        font-size: .8rem;
+    }
+}
+

@@ -54,6 +54,11 @@
     margin: 0 0 1rem 0;
 }
 
+.enlargedImg {
+    width: 800px;
+    transition: all 1s ease-in-out;
+}
+
 .extraSection {
     display: flex;
     flex-direction: column;
@@ -77,6 +82,7 @@
     border: 2px solid var(--darkGreen);
     border-radius: 10px;
     font-size: 1.2rem;
+    cursor: pointer;
     color: var(--lightGray);
     padding: .3rem;
     margin-bottom: 1rem;
@@ -101,4 +107,84 @@
 .shown {
     opacity: 1;
     position: relative;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) {
+    .mainSection__fig img {
+        width: 750px;
+    }
+
+    .extraSection__fig img {
+        width: 750px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px)  { 
+    .mainSection__fig img {
+        width: 700px;
+    }
+
+    .extraSection__fig img {
+        width: 700px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px)  { 
+    .mainSection__fig img {
+        width: 650px;
+    }
+
+    .extraSection__fig img {
+        width: 650px;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) { 
+    .mainSection__fig img {
+        width: 550px;
+    }
+
+    .extraSection__fig img {
+        width: 550px;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 568px) {
+    .mainSection__fig img {
+        width: 450px;
+    }
+
+    .extraSection__fig img {
+        width: 450px;
+    }
+  }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .mainSection__subTitle {
+        font-size: 1.1rem;
+    }
+
+    .mainSection__fig img {
+        width: 250px;
+    }
+
+    .extraSection__subTitle {
+        font-size: 1.1rem;
+    }
+
+    .extraSection__fig img {
+        width: 250px;
+    }
 }

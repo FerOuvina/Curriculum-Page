@@ -48,3 +48,33 @@
     font-size: 1.2rem;
     margin-right: 5rem;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px) {
+    .header {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .mainSection__fig {
+        display: none;
+    }
+    .mainSection__address {
+        margin: .2rem;
+    }
+  }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .header {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    .mainSection__fig {
+        display: none;
+    }
+    .mainSection__address {
+        margin: .2rem;
+    }
+  }
